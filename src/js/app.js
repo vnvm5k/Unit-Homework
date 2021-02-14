@@ -1,17 +1,16 @@
 export default function healthIndicator(object) {
-	if (object.health > 0 && object.health < 15) {
-		return 'critical'
-	} else if(object.health >= 15 && object.health <= 50) {
-		return 'wounded'
-	} else if (object.health > 50) {
-		return 'healthy' 
-	}
+  let state = '';
+  if (object.health > 0 && object.health < 15) {
+    state = 'critical';
+  } if (object.health >= 15 && object.health <= 50) {
+    state = 'wounded';
+  } if (object.health > 50) {
+    state = 'healthy';
+  }
+  return state;
 }
 
 
 export function arraySort(array) {
-
-	return array.sort((prev, next) => next.health - prev.health);
-	 
+  return array.sort((prev, next) => next.health - prev.health);
 }
-
