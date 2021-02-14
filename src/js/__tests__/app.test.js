@@ -25,8 +25,6 @@ test('health Indicator3', () => {
 });
 
 
-
-
 // Task 2
 
 const array = [
@@ -50,4 +48,3 @@ test('sort3', () => {
   const result = arraySort(array);
   expect(result[2]).toEqual({ name: 'мечник', health: 10 });
 });
-
