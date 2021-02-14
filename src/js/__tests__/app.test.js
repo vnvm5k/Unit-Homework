@@ -25,10 +25,6 @@ test('health Indicator3', () => {
 });
 
 
-test('health Indicator4', () => {
-  const result4 = healthIndicator({ name: 'Маг', health: -1 });
-  expect(result4).toBe('critical');
-});
 
 
 // Task 2
@@ -55,7 +51,3 @@ test('sort3', () => {
   expect(result[2]).toEqual({ name: 'мечник', health: 10 });
 });
 
-test('sort4', () => {
-  const result = arraySort(array);
-  expect(result[2]).toEqual({ name: 'нежить', health: -100 });
-});
