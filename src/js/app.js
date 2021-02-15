@@ -9,8 +9,3 @@ export default function healthIndicator(object) {
   }
   return state;
 }
-
-
-export function arraySort(array) {
-  return array.sort((prev, next) => next.health - prev.health);
-}
